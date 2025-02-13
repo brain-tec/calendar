@@ -17,7 +17,11 @@ calendar
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[calendar_public_holiday](calendar_public_holiday/) | 18.0.1.0.0 |  | Manage Public Holidays
 
 [//]: # (end addons)
 
