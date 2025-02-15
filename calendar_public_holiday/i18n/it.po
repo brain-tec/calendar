@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-14 15:06+0000\n"
+"PO-Revision-Date: 2025-02-15 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -194,9 +194,8 @@ msgstr "Giorni festivi"
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday_line__state_ids
-#, fuzzy
 msgid "Related States"
-msgstr "Province correlate"
+msgstr "Nazioni correlate"
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,help:calendar_public_holiday.field_calendar_public_holiday_next_year__public_holiday_ids
