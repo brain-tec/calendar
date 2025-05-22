@@ -35,6 +35,7 @@
         "security/resource_booking_security.xml",
         "security/ir.model.access.csv",
         "templates/portal.xml",
+        "wizard/mail_activity_schedule_views.xml",
         "views/calendar_event_views.xml",
         "views/mail_activity_views.xml",
         "views/res_partner_views.xml",

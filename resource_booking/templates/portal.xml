@@ -42,9 +42,9 @@
                             </td>
                         </tr>
                     </thead>
-                    <thead class="thead-dark">
+                    <thead class="table-dark">
                         <tr>
-                            <th class="text-left">
+                            <th class="text-start">
                                 <a
                                     t-if="start > now"
                                     t-att-href="booking.get_portal_url(suffix='/schedule/%d/%d' % (start_previous.year, start_previous.month))"
@@ -59,7 +59,7 @@
                                 colspan="5"
                                 t-out="start.strftime('%B %Y')"
                             />
-                            <th class="text-right">
+                            <th class="text-end">
                                 <a
                                     t-att-href="booking.get_portal_url(suffix='/schedule/%d/%d' % (start_next.year, start_next.month))"
                                     class="btn btn-secondary"
@@ -290,7 +290,7 @@
                         <th>Type</th>
                         <th>Resources</th>
                         <th class="text-center">State</th>
-                        <th class="text-right">Date</th>
+                        <th class="text-end">Date</th>
                     </tr>
                 </thead>
                 <t t-foreach="bookings" t-as="booking">
@@ -311,11 +311,11 @@
                         </td>
                         <td class="text-center">
                             <span
-                                class="badge badge-secondary"
+                                t-attf-class="badge rounded-pill #{'text-bg-success' if booking.state == 'confirmed' else 'text-bg-info'}"
                                 t-field="booking.state"
                             />
                         </td>
-                        <td class="text-right">
+                        <td class="text-end">
                             <span t-field="booking.start" />
                         </td>
                     </tr>
@@ -331,11 +331,11 @@
                     <span t-field="booking_sudo.display_name" />
                 </h5>
             </div>
-            <div class="col-md text-md-right">
-                <small class="text-right">State:</small>
+            <div class="col-md text-md-end">
+                <small class="text-end">State:</small>
                 <span
                     t-field="booking_sudo.state"
-                    class="badge badge-secondary"
+                    t-attf-class="badge rounded-pill #{'text-bg-success' if booking_sudo.state == 'confirmed' else 'text-bg-info'}"
                     title="Current state of this booking"
                 />
             </div>
@@ -566,7 +566,7 @@
     </template>
     <template id="resource_booking_portal_schedule" name="Resource Booking Scheduling">
         <t t-call="portal.portal_layout">
-            <t t-set="o_portal_fullwidth_alert" groups="project.group_project_user">
+            <t t-set="o_portal_fullwidth_alert" groups="resource_booking.group_user">
                 <t t-call="portal.portal_back_in_edit_mode">
                     <t
                         t-set="backend_url"
