@@ -115,8 +115,8 @@ msgstr ""
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
-msgid "<small class=\"text-right\">State:</small>"
-msgstr "<small class=\"text-right\">Estado:</small>"
+msgid "<small class=\"text-end\">State:</small>"
+msgstr ""
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
@@ -234,6 +234,11 @@ msgstr "Tipo de actividad"
 #: model:ir.model.fields,field_description:resource_booking.field_resource_booking_type__activity_type_icon
 msgid "Activity Type Icon"
 msgstr "Icono de tipo de actividad"
+
+#. module: resource_booking
+#: model:ir.model,name:resource_booking.model_mail_activity_schedule
+msgid "Activity schedule plan Wizard"
+msgstr ""
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
@@ -888,6 +893,7 @@ msgid "Only one event per resource booking can exist."
 msgstr "Solo puede existir un evento por reserva de recursos."
 
 #. module: resource_booking
+#: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_schedule_view_form
 #: model_terms:ir.ui.view,arch_db:resource_booking.mail_activity_view_form_popup
 msgid "Open Resource Booking"
 msgstr "Abrir una reserva de recursos"
@@ -1078,6 +1084,15 @@ msgstr "Planificado"
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_search
 msgid "Scheduled or confirmed"
 msgstr "Agendada o confirmada"
+
+#. module: resource_booking
+#. odoo-python
+#: code:addons/resource_booking/wizard/mail_activity_schedule.py:0
+#, python-format
+msgid ""
+"Scheduling an activity using the booking is not possible on more than one "
+"record."
+msgstr ""
 
 #. module: resource_booking
 #: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_token
@@ -1369,6 +1384,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:resource_booking.message_combination_assigned
 msgid "because you belong to the chosen resource combination:"
 msgstr "porque pertenece a la combinación de recursos elegida:"
+
+#~ msgid "<small class=\"text-right\">State:</small>"
+#~ msgstr "<small class=\"text-right\">Estado:</small>"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Última modificación en"
