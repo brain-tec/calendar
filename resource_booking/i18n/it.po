@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-03 17:24+0000\n"
+"PO-Revision-Date: 2025-05-27 09:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -115,7 +115,7 @@ msgstr ""
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_header
 msgid "<small class=\"text-end\">State:</small>"
-msgstr ""
+msgstr "<small class=\"text-end\">Stato:</small>"
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_view_form
@@ -237,7 +237,7 @@ msgstr "Icona tipo attività"
 #. module: resource_booking
 #: model:ir.model,name:resource_booking.model_mail_activity_schedule
 msgid "Activity schedule plan Wizard"
-msgstr ""
+msgstr "Procedura guidata piano schedulazione attività"
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.scheduling_calendar
@@ -1092,6 +1092,8 @@ msgid ""
 "Scheduling an activity using the booking is not possible on more than one "
 "record."
 msgstr ""
+"Non è possibile schedulare una attività usando la prenotazione su più di un "
+"record."
 
 #. module: resource_booking
 #: model:ir.model.fields,field_description:resource_booking.field_resource_booking__access_token
