@@ -6,7 +6,7 @@
 {
     "name": "Resource booking",
     "summary": "Manage appointments and resource booking",
-    "version": "17.0.1.0.2",
+    "version": "17.0.1.1.0",
     "development_status": "Production/Stable",
     "category": "Appointments",
     "website": "https://github.com/OCA/calendar",
@@ -35,6 +35,7 @@
         "security/resource_booking_security.xml",
         "security/ir.model.access.csv",
         "templates/portal.xml",
+        "wizard/mail_activity_schedule_views.xml",
         "views/calendar_event_views.xml",
         "views/mail_activity_views.xml",
         "views/res_partner_views.xml",

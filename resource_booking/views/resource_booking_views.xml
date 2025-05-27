@@ -91,7 +91,7 @@
                         string="Cancel"
                         type="object"
                         help="Unschedule this booking and archive it."
-                        invisible="not is_modifiable or state == 'canceled' or not meeting_id"
+                        invisible="not is_modifiable or state == 'canceled' or meeting_id"
                     />
                     <button
                         name="action_cancel"
