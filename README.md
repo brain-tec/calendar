@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[resource_booking](resource_booking/) | 13.0.2.6.5 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Manage appointments and resource booking
+[resource_booking](resource_booking/) | 13.0.2.6.5 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Manage appointments and resource booking
 
 [//]: # (end addons)
 
