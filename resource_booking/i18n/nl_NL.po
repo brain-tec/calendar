@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-25 15:53+0000\n"
+"PO-Revision-Date: 2025-06-26 13:25+0000\n"
 "Last-Translator: Bram Buijs <b.buijs@onestein.nl>\n"
 "Language-Team: none\n"
 "Language: nl_NL\n"
@@ -33,14 +33,14 @@ msgstr "# %(id)d - %(name)s"
 #. module: resource_booking
 #. odoo-python
 #: code:addons/resource_booking/models/resource_booking.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "%(partner)s - %(type)s"
 msgstr "%(partner)s - %(type)s"
 
 #. module: resource_booking
 #. odoo-python
 #: code:addons/resource_booking/models/resource_booking.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "%(partner)s - %(type)s - %(time)s"
 msgstr "%(partner)s - %(type)s - %(time)s"
 
@@ -164,7 +164,6 @@ msgstr "<strong>Het gekozen rooster is niet langer beschikbaar.</strong>"
 
 #. module: resource_booking
 #: model_terms:ir.ui.view,arch_db:resource_booking.resource_booking_portal_form
-#, fuzzy
 msgid "<strong>Type:</strong>"
 msgstr "<strong>Type:</strong>"
 
@@ -577,7 +576,7 @@ msgstr "Duratie:"
 #. module: resource_booking
 #. odoo-python
 #: code:addons/resource_booking/models/mail_activity.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "Feedback: %(feedback)s"
 msgstr "Feedback: %(feedback)s"
 
