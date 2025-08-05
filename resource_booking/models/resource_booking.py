@@ -7,6 +7,7 @@ import calendar
 from datetime import datetime, timedelta
 
 from dateutil.relativedelta import relativedelta
+from pytz import timezone
 
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
@@ -661,7 +662,8 @@ class ResourceBooking(models.Model):
             or booking.combination_id
             or booking.mapped("type_id.combination_rel_ids.combination_id")
         ).with_context(analyzing_booking=booking_id)
-        result &= combinations._get_intervals(start_dt, end_dt)
+        tz = timezone(self.type_id.resource_calendar_id.tz)
+        result &= combinations._get_intervals(start_dt, end_dt, tz)
         return result
 
     def _sync_booking_activities_date(self):
