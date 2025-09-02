@@ -2,8 +2,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-def migrate(env):
-    env.cr.execute(
+def migrate(cr, version):
+    cr.execute(
         """
         ALTER TABLE resource_booking RENAME partner_id TO old_partner_id
         """,
