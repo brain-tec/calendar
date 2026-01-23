@@ -11,6 +11,7 @@ setuptools.setup(
         'odoo-addon-calendar_event_link_base>=16.0dev,<16.1dev',
         'odoo-addon-calendar_event_type_color>=16.0dev,<16.1dev',
         'odoo-addon-calendar_monthly_multi>=16.0dev,<16.1dev',
+        'odoo-addon-microsoft_calendar_filter>=16.0dev,<16.1dev',
         'odoo-addon-resource_booking>=16.0dev,<16.1dev',
     ],
     classifiers=[
