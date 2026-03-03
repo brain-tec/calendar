@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-oca-calendar"
+version = "19.0.20260302.0"
+dependencies = [
+    "odoo-addon-calendar_public_holiday==19.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 19.0",
+]
