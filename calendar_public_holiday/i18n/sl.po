@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-06-08 07:33+0000\n"
+"PO-Revision-Date: 2026-06-08 07:39+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: none\n"
 "Language: sl\n"
@@ -28,16 +28,23 @@ msgid ""
 "                            optional fields and only need to click on the button\n"
 "                            \"Create\"."
 msgstr ""
+"Privzeto se kot predloga uporabijo najnovejši prazniki\n"
+"                            za vsako državo, da se ustvarijo\n"
+"                            prazniki za leto, ki sledi predlogam.\n"
+"                            <br/><br/>\n"
+"                            Običajno vam ni treba vnašati ničesar v\n"
+"                            neobvezna polja in je treba le klikniti gumb\n"
+"                            \"Ustvari\"."
 
 #. module: calendar_public_holiday
 #: model:ir.model,name:calendar_public_holiday.model_calendar_public_holiday
 msgid "Calendar Public Holiday"
-msgstr ""
+msgstr "Koledarski praznik"
 
 #. module: calendar_public_holiday
 #: model:ir.model,name:calendar_public_holiday.model_calendar_public_holiday_line
 msgid "Calendar Public Holiday Line"
-msgstr ""
+msgstr "Postavka koledarskega praznika"
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday__year
@@ -70,7 +77,7 @@ msgstr "Ustvari praznike za naslednje leto"
 #. module: calendar_public_holiday
 #: model:ir.model,name:calendar_public_holiday.model_calendar_public_holiday_next_year
 msgid "Create Public Holiday From Existing Ones"
-msgstr ""
+msgstr "Ustvari praznike na podlagi obstoječih"
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday__create_uid
@@ -103,11 +110,13 @@ msgid ""
 "Dates of holidays should be the same year as the calendar year they are "
 "being assigned to"
 msgstr ""
+"Datumi praznikov morajo biti v istem letu kot koledarsko leto, kateremu so "
+"dodeljeni"
 
 #. module: calendar_public_holiday
 #: model_terms:ir.ui.view,arch_db:calendar_public_holiday.calendar_public_holiday_next_year_view
 msgid "Defaults"
-msgstr ""
+msgstr "Privzete nastavitve"
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday__display_name
@@ -165,6 +174,8 @@ msgid ""
 "No Public Holidays found as template. Please create the first Public "
 "Holidays manually."
 msgstr ""
+"Kot predloga ni bilo najdenih praznikov. Prosimo, prve praznike ustvarite "
+"ročno."
 
 #. module: calendar_public_holiday
 #: model_terms:ir.ui.view,arch_db:calendar_public_holiday.calendar_public_holiday_next_year_view
@@ -192,6 +203,10 @@ msgid ""
 "country for each year will be taken into account (If you select templates "
 "from 2012 and 2015, only the templates from 2015 will be taken into account."
 msgstr ""
+"Izberite praznike, ki jih želite uporabiti kot predlogo. Če ni nastavljeno, "
+"bodo uporabljeni najnovejši prazniki vsake države. Upoštevane bodo le zadnje "
+"predloge vsake države za vsako leto (če izberete predloge iz let 2012 in "
+"2015, bodo upoštevane le predloge iz leta 2015."
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday_next_year__public_holiday_ids
@@ -207,6 +222,13 @@ msgid ""
 "                            anniversary of the Italian unification, so you want to\n"
 "                            replicate the 2010 Italian holidays to 2012.\""
 msgstr ""
+"Spodnja neobvezna polja so tu le za obravnavo\n"
+"                            posebnih primerov, kot je \"2011 je bilo posebno "
+"leto z\n"
+"                            dodatnim praznikom ob 150.\n"
+"                            obletnici italijanske združitve, zato želite\n"
+"                            kopirati italijanske praznike iz leta 2010 v "
+"leto 2012.\""
 
 #. module: calendar_public_holiday
 #: model_terms:ir.ui.view,arch_db:calendar_public_holiday.calendar_public_holiday_next_year_view
@@ -219,6 +241,13 @@ msgid ""
 "                        only the templates from 2015 will be taken into\n"
 "                        account)."
 msgstr ""
+"S tem čarovnikom lahko ustvarite praznike na podlagi\n"
+"                        obstoječih.<br/>\n"
+"                        Upoštevane bodo le najnovejše predloge za vsako \n"
+"                        državo (če izberete predloge\n"
+"                        iz let 2012 in 2015 za isto državo,\n"
+"                        se bodo upoštevale le predloge iz leta \n"
+"                        2015)."
 
 #. module: calendar_public_holiday
 #: model:ir.model.fields,field_description:calendar_public_holiday.field_calendar_public_holiday_next_year__year
@@ -231,12 +260,13 @@ msgid ""
 "Year for which you want to create the public holidays. By default, the year "
 "following the template."
 msgstr ""
+"Leto, za katero želite ustvariti praznike. Privzeto leto, ki sledi predlogi."
 
 #. module: calendar_public_holiday
 #. odoo-python
 #: code:addons/calendar_public_holiday/models/calendar_public_holiday.py:0
 msgid "You can't create duplicate public holiday per year and/or country"
-msgstr ""
+msgstr "Ne morete ustvariti podvojenega praznika za isto leto in/ali državo"
 
 #. module: calendar_public_holiday
 #. odoo-python
@@ -246,3 +276,5 @@ msgid ""
 "public holidays on 29th of February (2016, 2020...), please select a "
 "template from another year."
 msgstr ""
+"Kot predloge ne morete uporabiti praznikov leta, ki vključuje praznike 29. "
+"februarja (2016, 2020 ...), prosimo, izberite predlogo iz drugega leta."
